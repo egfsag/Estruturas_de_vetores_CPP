@@ -1,0 +1,159 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //declaração de um vetor de inteiros
+    int notas [5] = {1,2,3,4,5};
+    
+    //acessando um indice do vetor
+    cout << notas [1];
+
+    return 0;
+}
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string texto [7] = {"Monique" , "Ana" , "Lucas" , "Leo" , "Felipe" , "Theo" , "Pedro"};
+    
+    cout << texto [1];
+    
+    return 0;
+}
+
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string fruta [15] = {"Abacate" , "Melão" , "Uva" , "Quiabo" , "Rabanete" , "Jiló" , "Mexirica" , "Melancia" , "Maçã" , "Banana" , "Abóbora" , "Carambola" , "Fruta do Conde" , "Caju" , "Lixia"};
+    
+    cout << fruta [12];
+    
+    return 0;
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double preços [15] = {1.25 , 2.50 , 3.75 , 10.25 , 6.25 , 5.50 , 12.35 , 4.99 , 7.80 , 1.10 , 90.99 , 23.25 , 36.12 , 50.10 , 0.99};
+    
+    cout << preços [14];
+    
+    return 0;
+}
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string carros [7] = {"Toyota" , "Volkswagen" , "Hyundai" , "BYD" , "Honda" , "Fiat" , "Chevrolet"};
+    
+    cout << carros [0];
+    
+    return 0;
+}
+
+
+
+}
+
+#include <iostream>
+#include <vector>
+#include <string>
+
+int main() {
+    // Vetor com modelos de carro (exemplo)
+    std::vector<std::string> modelos = {
+        "Toyota Corolla",
+        "Toyota Hilux",
+        "Honda Civic",
+        "Honda Fit",
+        "Ford Mustang",
+        "Ford Fiesta",
+        "Chevrolet Onix",
+        "Chevrolet Camaro"
+    };
+
+    // Exibindo com cout
+    std::cout << "Modelos de carro:\n";
+    for (const auto& modelo : modelos) {
+        std::cout << "- " << modelo << std::endl;
+    }
+
+    return 0;
+}
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    // Vetor com preços de carros (valores fictícios)
+    vector<float> precos = {
+        145000.0f,  // Toyota Corolla
+        280000.0f,  // Toyota Hilux
+        160000.0f,  // Honda Civic
+        90000.0f,   // Honda Fit
+        350000.0f,  // Ford Mustang
+        75000.0f,   // Ford Fiesta
+        85000.0f,   // Chevrolet Onix
+        420000.0f   // Chevrolet Camaro
+    };
+
+    cout << "Preços dos carros:\n";
+    for (float preco : precos) {
+        cout << "R$ " << preco << endl;
+    }
+
+    return 0;
+}
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    // Vetor com 110 notas de alunos (valores fictícios)
+    vector<double> notas(110);
+
+    // Preenchendo o vetor com notas (exemplo simples)
+    for (int i = 0; i < 110; i++) {
+        notas[i] = 5.0 + (i % 6);   // só para gerar notas variadas
+    }
+
+    // Exibir o aluno 5 (índice 4, pois começa do zero)
+    int aluno = 5;
+    cout << "Aluno " << aluno 
+         << " tem a nota: " << notas[aluno - 1] << endl;
+
+    return 0;
+}
+
+
+
+#include <iostream>
+ using namespace std;
+int main()
+{
+ for (int i = 1; i <= 10; i++)
+{
+    cout << i << endl;
+}
+    return 0;
+}
+
